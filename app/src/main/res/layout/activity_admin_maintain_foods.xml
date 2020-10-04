@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="20dp"
+    android:layout_marginTop="22dp"
+    android:layout_marginEnd="22dp"
+    android:layout_marginStart="22dp"
+    tools:context=".admin.adminMaintainFoods">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/food_image_maintain"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
+
+        <EditText
+            android:id="@+id/food_maintain_name"
+            android:layout_below="@id/food_image_maintain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:hint="Food Name"
+            android:background="@drawable/textbox"
+            android:padding="12dp"
+            android:layout_margin="8dp"
+            />
+
+        <EditText
+            android:id="@+id/food_maintain_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/food_maintain_name"
+            android:textAlignment="center"
+            android:hint="Food Price"
+            android:background="@drawable/textbox"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            />
+
+        <EditText
+            android:id="@+id/food_maintain_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/food_maintain_price"
+            android:textAlignment="center"
+            android:hint="Food Description"
+            android:background="@drawable/textbox"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            />
+
+        <Button
+            android:id="@+id/apply_btn"
+            android:layout_below="@+id/food_maintain_des"
+            android:text="Apply Changes"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/button"
+            />
+
+        <Button
+            android:id="@+id/delete_btn"
+            android:layout_below="@+id/apply_btn"
+            android:text="Delete Changes"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/button"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

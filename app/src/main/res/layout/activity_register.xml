@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/falkenlogo" />
+
+        <TextView
+            android:id="@+id/logintext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25sp"
+            android:text="Falken Foods"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            app:fontFamily="@font/lato_bold" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:background="@drawable/textbox"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:fontFamily="@font/lato_bold"
+            android:hint="Name"
+            android:textColor="#000000"
+            android:inputType="text|textNoSuggestions"
+            android:padding="10dp"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/textbox"
+            android:drawableLeft="@drawable/mail"
+
+            android:fontFamily="@font/lato_bold"
+            android:textColor="#000000"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/phonenumber"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/textbox"
+            android:drawableLeft="@drawable/phone"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="#000000"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/registerpassword"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/textbox"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:fontFamily="@font/lato_bold"
+            android:hint="Password"
+            android:textColor="#000000"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/confirmpassword"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/textbox"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:fontFamily="@font/lato_bold"
+            android:hint="Confirm Password"
+            android:textColor="#000000"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="#000000" />
+
+        <Button
+
+            android:id="@+id/registerBtn"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/lato_bold"
+            android:text="Register"
+            android:textColor="#ffff"
+            android:textAllCaps="false"
+            android:textSize="22sp" />
+
+
+        <ImageButton
+            android:id="@+id/backMainBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/roundbutton"
+            android:drawablePadding="40sp"
+            android:fontFamily="@font/lato_bold"
+            android:src="@drawable/ic_arrow_back"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:textSize="15sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
